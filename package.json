@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --spec cypress/e2e/tests/AddToCartTest.cy.js --browser chrome",
+    "test": "npx cypress run --spec cypress/e2e/tests/AddToCartTest.cy.js --browser electron",
     "test:safari": "npx cypress run --spec cypress/e2e/tests/AddToCartTest.cy.js --browser webkit --headed",
     "test:env": "npx cypress run --headed --spec 'cypress/e2e/tests/e2eTest.cy.js' -- --env url='https://rahulshettyacademy.com'",
     "test:all": "npx cypress run"
