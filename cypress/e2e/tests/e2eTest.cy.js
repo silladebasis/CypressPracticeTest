@@ -3,14 +3,14 @@ import productPage from "../pages/productsPage";
 import checkOutPage from "../pages/CheckOutPage";
 import purchasePage from "../pages/PurchasePage";
 
-describe('Data driven using fixtures',() => {
+describe('E2E test scenarios',() => {
     let userData;
     beforeEach(() => {
         cy.fixture('example.json').then((data) => {
             userData = data
         })
     })
-    it('DDT using fixtures',() => {
+    it('Purchase Order Test',() => {
         let baseURL = Cypress.env('url')
         cy.visit(baseURL + '/angularpractice/')
         homePage.enterName(userData.name).selectGender(userData.gender)
