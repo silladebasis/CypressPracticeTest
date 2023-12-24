@@ -1,0 +1,9 @@
+{
+  "name": "Testing using Cypress",
+  "email": "test@automation.com",
+  "gender": "Female",
+  "productName": [
+    "Blackberry",
+    "Nokia Edge"
+  ]
+}
