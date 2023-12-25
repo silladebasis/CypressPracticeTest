@@ -20,7 +20,7 @@ pipeline{
         stage('Testing'){
             steps{
                 bat "npm install"
-                bat "npx cypress run --spec ${SPEC}"
+                bat "npm run "%scripts%"
             }
         }
         stage('Deploying'){
