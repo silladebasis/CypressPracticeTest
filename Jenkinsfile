@@ -12,7 +12,10 @@ pipeline{
 
     stages{
         stage('Build'){
-            echo "Build the application"
+            steps{
+                echo "Build the application"
+            }
+            
         }
         stage('Testing'){
             steps{
@@ -21,7 +24,10 @@ pipeline{
             }
         }
         stage('Deploying'){
-            echo "Deployment the application"
+            steps{
+                echo "Deployment the application"
+            }
+            
         }
     }
 
