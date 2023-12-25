@@ -2,7 +2,6 @@ pipeline{
     agent any
 
     parameters{
-        string(name:'SPEC',defaultValue:"cypress/e2e/tests/**.js")
         choice(name:'scripts',choices:['test','test:safari','test:env','test:all'],description:'Select the scripts you want to execute')
     }
 
